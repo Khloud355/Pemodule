@@ -1,0 +1,481 @@
+@charset "UTF-8";
+body {
+  background-color: #4b379a;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  margin-top: 6rem;
+}
+
+.header header {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(50, 36, 176, 0.8)), to(rgba(190, 94, 222, 0.8))), url(../imags/رمزيات-رمادية-03.jpg);
+  background-image: linear-gradient(to right, rgba(50, 36, 176, 0.8), rgba(190, 94, 222, 0.8)), url(../imags/رمزيات-رمادية-03.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+}
+.header header .header-logo .logo .logo-img {
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+.header header .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header header .icon .line {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.header header .header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.header header .header-content h1 {
+  font-size: 120px;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.25em;
+  color: #fff;
+  font-weight: lighter !important;
+}
+@media (max-width: 991px) {
+  .header header .header-content h1 {
+    font-size: 50px;
+  }
+}
+.header header .header-content p {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+.header header .header-content a {
+  color: #fff;
+  padding: 0.6rem 2rem;
+  border: 1px solid #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+@media (max-width: 991px) {
+  .header header .header-content a {
+    padding: 0.6rem;
+  }
+}
+.header header .header-content a:link,
+.header header .header-content a :visited {
+  color: #fff;
+  text-decoration: none;
+}
+.header header .header-content a:hover {
+  border: 1px solid transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(50, 36, 176, 0.8)), to(rgba(190, 94, 222, 0.8)));
+  background-image: linear-gradient(to right, rgba(50, 36, 176, 0.8), rgba(190, 94, 222, 0.8));
+  background-size: cover;
+  background-clip: padding-box;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.notebook .notebook-data {
+  background-color: #fff;
+  padding: 5rem 1rem;
+}
+@media (max-width: 991px) {
+  .notebook .notebook-data {
+    padding: 1rem;
+  }
+}
+.notebook .notebook-data .content {
+  margin-top: 3rem;
+}
+.notebook .notebook-data .content h3 {
+  font-family: "Poppins", sans-serif;
+  color: #222222;
+  line-height: 1.25em !important;
+}
+.notebook .notebook-data .content p {
+  margin-top: 1rem;
+  color: #bbb;
+}
+.notebook .notebook-data .content a {
+  color: #fff;
+  margin: 2rem 0;
+  padding: 0.8rem 2rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(50, 36, 176, 0.8)), to(rgba(190, 94, 222, 0.8)));
+  background-image: linear-gradient(to right, rgba(50, 36, 176, 0.8), rgba(190, 94, 222, 0.8));
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4rem;
+}
+.notebook .notebook-data .content a:link,
+.notebook .notebook-data .content a :visited {
+  color: #fff;
+  text-decoration: none;
+}
+.notebook .notebook-data .picture {
+  /* Slideshow container */
+  /* Next & previous buttons */
+  /* Position the "next button" to the right */
+  /* On hover, add a black background color with a little bit see-through */
+  /* Caption text */
+  /* Number text (1/3 etc) */
+  /* The dots/bullets/indicators */
+  /* Fading animation */
+  /* On smaller screens, decrease text size */
+}
+@media (max-width: 991px) {
+  .notebook .notebook-data .picture {
+    padding: 2rem;
+  }
+}
+.notebook .notebook-data .picture .mySlides {
+  display: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.notebook .notebook-data .picture img {
+  vertical-align: middle;
+  width: 20rem;
+  height: 20rem;
+}
+.notebook .notebook-data .picture .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.notebook .notebook-data .picture .prev,
+.notebook .notebook-data .picture .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.notebook .notebook-data .picture .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.notebook .notebook-data .picture .prev:hover,
+.notebook .notebook-data .picture .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.notebook .notebook-data .picture .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.notebook .notebook-data .picture .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.notebook .notebook-data .picture .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #4b379a;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+.notebook .notebook-data .picture .active,
+.notebook .notebook-data .picture .dot:hover {
+  background-color: #717171;
+  width: 20px;
+  height: 5px;
+  border-radius: 1px;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .notebook .notebook-data .picture .prev,
+.notebook .notebook-data .picture .next,
+.notebook .notebook-data .picture .text {
+    font-size: 11px;
+  }
+}
+
+.fixed .data {
+  background-image: url("../imags/sunset-3689760_960_720.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.fixed .data .content {
+  padding: 5rem 1rem;
+  color: #000;
+}
+.fixed .data .content a {
+  color: #fff;
+  padding: 0.6rem 2rem;
+  border: 1px solid #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4rem;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.fixed .data .content a:link,
+.fixed .data .content a :visited {
+  color: #000;
+  text-decoration: none;
+}
+.fixed .data .content a:hover {
+  border: 1px solid transparent;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(50, 36, 176, 0.8)), to(rgba(190, 94, 222, 0.8)));
+  background-image: linear-gradient(to right, rgba(50, 36, 176, 0.8), rgba(190, 94, 222, 0.8));
+  background-size: cover;
+  background-clip: padding-box;
+}
+
+.gallery .images {
+  background-color: #fff;
+  padding: 4rem 1rem;
+}
+.gallery .images .row {
+  margin: 1rem 0;
+}
+.gallery .images .img1 {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  z-index: 999;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media (max-width: 991px) {
+  .gallery .images .img1 {
+    width: 327px;
+    height: 250px;
+  }
+}
+.gallery .images .img1 .story-caption {
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  color: wheat;
+  z-index: 999;
+  display: none;
+}
+.gallery .images .img1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .images .img1::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 36, 176, 0.8)), to(rgba(190, 94, 222, 0.8)));
+  background-image: linear-gradient(to bottom, rgba(50, 36, 176, 0.8), rgba(190, 94, 222, 0.8));
+}
+.gallery .images .img1:hover::after {
+  cursor: pointer;
+  display: block;
+  -webkit-animation-name: moveinbottom;
+          animation-name: moveinbottom;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+.gallery .images .img1:hover .story-caption {
+  display: block;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.send-message .forma {
+  padding: 4rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(50, 36, 176, 0.8)), to(rgba(190, 94, 222, 0.8))), url(../imags/contact-bg.jpg);
+  background-image: linear-gradient(to right, rgba(50, 36, 176, 0.8), rgba(190, 94, 222, 0.8)), url(../imags/contact-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.send-message .forma .data {
+  color: #fff;
+}
+.send-message .forma .data form {
+  margin-top: 3rem;
+}
+.send-message .forma .data form .form-control {
+  background-color: transparent;
+  border: 1px solid #8373ca;
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .send-message .forma .data form .form-control {
+    margin-top: 0.9rem;
+  }
+}
+.send-message .forma .data form .form-control::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.send-message .forma .data form .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.send-message .forma .data form .form-control:focus:invalid {
+  border: 1px solid red;
+}
+.send-message .forma .data form button {
+  padding: 0.6rem 2.5rem;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  margin-top: 1rem;
+  border-radius: 4rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: start !important;
+      -ms-flex-pack: start !important;
+          justify-content: flex-start !important;
+}
+.send-message .forma .data form button:focus {
+  outline: none;
+}
+.send-message .forma .data form button:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(50, 36, 176, 0.8)), to(rgba(190, 94, 222, 0.8)));
+  background-image: linear-gradient(to right, rgba(50, 36, 176, 0.8), rgba(190, 94, 222, 0.8));
+  background-clip: padding-box;
+  border: 1px solid transparent;
+}
+.send-message .forma .data .row {
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: #222222;
+  padding: 4rem;
+}
+.footer .links {
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.footer .links span {
+  margin-left: 2rem;
+}
+.footer .links span:hover {
+  color: #4b379a;
+  cursor: pointer;
+}
+.footer .icon {
+  padding: 1.6rem;
+}
+.footer .icon i {
+  color: #fff;
+  margin-left: 2rem;
+}
+.footer p {
+  color: #fff;
+  font-size: 0.9rem;
+}
+.footer p i {
+  color: #4b379a;
+}
+.footer p span {
+  color: #4b379a;
+}
+
+@-webkit-keyframes moveinbottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes moveinbottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}/*# sourceMappingURL=main.css.map */
